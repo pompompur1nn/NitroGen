@@ -29,7 +29,7 @@ def send_request():
         token = response.json().get("token")
 
         # Append the token to a link (adjust the link format as needed)
-        link_with_token = f"https://discord.com/billing/partner-promotions/{token}"
+        link_with_token = f"https://discord.com/billing/partner-promotions/1180231712274387115/{token}"
         print(f"Link with Nitro: {link_with_token}")
 
         # Write the token and link to a text file
@@ -41,4 +41,3 @@ def send_request():
 # Run the script to send a request every second
 while True:
     send_request()
-    time.sleep(1)  # Changed the sleep time to 1 second for clarity
